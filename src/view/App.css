@@ -1,0 +1,32 @@
+.main-div {
+  background-color: white;
+}
+.navigation-bar {
+  width: 100%;
+  text-align: center;
+  background-color: yellow;
+}
+.navigation-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+.navigation-item {
+  display: block;
+}
+.navigation-link {
+  text-decoration: none;
+  color: black;
+  display: block;
+  padding: 8px 30px;
+  background-color: yellow;
+}
+/*
+.float-left{
+  float: left;
+}
+.float-right{
+  float: right;
+}
+*/
