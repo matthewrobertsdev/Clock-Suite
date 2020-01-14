@@ -1,15 +1,16 @@
 
 const initialState = {
+    colorString: "rgb(236, 77, 61)"
 };
 
-export function defaultReducer(state = initialState, action) {
+export default function defaultReducer(state = initialState, action) {
     switch (action.type) {
         case 'CHANGE_COLOR': return { ...state, colorString: getRandomColorString() };
         default: return state;
     }
 };
 
-export default function getRandomColorString(){
+export function getRandomColorString(){
     const red="rgb(236, 77, 61)"
     const orange="rgb(242, 153, 56)"
     const yellow="rgb(248, 204, 70)"

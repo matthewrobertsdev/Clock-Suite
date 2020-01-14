@@ -1,6 +1,3 @@
-.main-div {
-  background-color: white;
-}
 .navigation-bar {
   width: 100%;
   text-align: center;
@@ -14,6 +11,7 @@
 }
 .navigation-item {
   display: block;
+  font-weight: 600;
 }
 .navigation-link {
   text-decoration: none;
@@ -21,6 +19,22 @@
   display: block;
   padding: 8px 30px;
   background-color: yellow;
+}
+.main-background {
+  background-color: lightblue;
+}
+@media (prefers-color-scheme: dark){
+  .main-background {
+    color: white;
+    background-color: darkblue;
+  }
+  .navigation-bar {
+    background-color: rgb(184, 8, 8);
+  }
+  .navigation-link {
+    color: white;
+    background-color: rgb(184, 8, 8);
+  }
 }
 /*
 .float-left{
