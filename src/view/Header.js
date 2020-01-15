@@ -1,7 +1,7 @@
 import React from 'react'
 import { connect } from 'react-redux';
 import NavigationItem from './NavigationItem'
-import {changeColor} from './DefaultReducerActions'
+import {changeColor} from '../management/DefaultReducerActions'
 import './App.css';
 import './Colors.css';
 const mapStateToProps = (state) => { return { colorClass: state.misc.colorClass } };
