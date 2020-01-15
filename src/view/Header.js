@@ -1,13 +1,19 @@
 import React from 'react'
+import { connect } from 'react-redux';
 import NavigationItem from './NavigationItem'
-import {getRandomColorString} from './DefaultReducer'
+import {changeColor} from './DefaultReducerActions'
 import './App.css';
-class Header extends React.Component{
+const mapStateToProps = (state) => { return { colorClass: state.misc.colorClass } };
+const mapDispatchToProps = dispatch => {
+  return { changeColor: () => { dispatch(changeColor()); }} };
+class UnconnectedHeader extends React.Component{
   componentDidMount(){
-    //document.body.style.backgroundColor=getRandomColorString()
+    this.props.changeColor();
+    console.log(this.props.colorClass)
   }
     render(){
-      return(<nav className="navigation-bar"><ul className="navigation-list">
+      document.body.classList=this.props.colorClass
+      return(<nav className={"navigation-bar "+this.props.colorClass}><ul className="navigation-list +this.props.colorClass">
         <NavigationItem left={true} URL="/" title="Celeritas Apps"/>
         <NavigationItem left={true} URL="/about" title="About"/>
         <NavigationItem left={true} URL="/contact" title="Contact"/>
@@ -15,4 +21,5 @@ class Header extends React.Component{
       </ul></nav>);
     }
 }
+const Header=connect(mapStateToProps, mapDispatchToProps)(UnconnectedHeader)
 export default Header;

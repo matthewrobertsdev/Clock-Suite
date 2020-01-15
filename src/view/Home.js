@@ -1,5 +1,10 @@
 import React from 'react';
-function Home(){
-    return (<div className='main-background'><br></br><br></br><br></br><br></br></div>);
+import { connect } from 'react-redux';
+const mapStateToProps = (state) => { return { colorClass: state.misc.colorClass } };
+class UnconnectedHome extends React.Component {
+    render(){
+        return (<div className={'main-background main-'+this.props.colorClass}><br></br><br></br><br></br><br></br></div>);
+    }
 }
+const Home=connect(mapStateToProps, null)(UnconnectedHome)
 export default Home;
