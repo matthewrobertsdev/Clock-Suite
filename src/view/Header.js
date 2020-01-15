@@ -9,7 +9,6 @@ const mapDispatchToProps = dispatch => {
 class UnconnectedHeader extends React.Component{
   componentDidMount(){
     this.props.changeColor();
-    console.log(this.props.colorClass)
   }
     render(){
       document.body.classList=this.props.colorClass
