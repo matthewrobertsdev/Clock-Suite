@@ -15,6 +15,7 @@ export default function AppRouter() {
                 <Route path="/" exact component={Home} />
                     <Route path="/about" exact component={Home} />
                     <Route path="/contact" exact component={Home} />
+                    <Route path="/privacy" exact component={Home} />
                     <Route component={Home} />
                 </Switch>
             </div>
