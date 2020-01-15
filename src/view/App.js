@@ -1,8 +1,8 @@
 import React from 'react';
-import './App.css';
-import createModelStore from './ModelStore';
 import {Provider} from 'react-redux';
+import createModelStore from './ModelStore';
 import AppRouter from './AppRouter';
+import './App.css';
 export default function App(){
   return (
     <Provider store={createModelStore()}>

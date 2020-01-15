@@ -13,7 +13,7 @@ class UnconnectedHeader extends React.Component{
   }
     render(){
       document.body.classList=this.props.colorClass
-      return(<nav className={"navigation-bar "+this.props.colorClass}><ul className="navigation-list +this.props.colorClass">
+      return(<nav className={"navigation-bar "+this.props.colorClass}><ul className="navigation-list">
         <NavigationItem left={true} URL="/" title="Celeritas Apps"/>
         <NavigationItem left={true} URL="/about" title="About"/>
         <NavigationItem left={true} URL="/contact" title="Contact"/>
