@@ -25,7 +25,7 @@
   cursor: pointer;
   margin: 8.5px 10px;
 }
-.bar-1, .bar-2, .bar-3 {
+.bar-1, .bar-2 {
   width: 30px;
   height: 3px;
   background-color: white;
@@ -36,8 +36,7 @@
   -webkit-transform: rotate(-45deg) translate(-9px, 6px);
   transform: rotate(-45deg) translate(-9px, 6px);
 }
-.change .bar-2 {opacity: 0;}
-.change .bar-3 {
+.change .bar-2 {
   -webkit-transform: rotate(45deg) translate(-8px, -8px);
   transform: rotate(45deg) translate(-8px, -8px);
 }

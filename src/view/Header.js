@@ -2,16 +2,18 @@ import React from 'react'
 import { connect } from 'react-redux'
 import NavigationItem from './NavigationItem'
 import MenuBars from './MenuBars'
-import {changeColor} from '../management/DefaultReducerActions'
+import {changeColor, displayMenu} from '../management/DefaultReducerActions'
 import './App.css';
 import './Colors.css';
-const mapStateToProps = (state) => { return { colorClass: state.misc.colorClass } };
+const mapStateToProps = (state) => { return { colorClass: state.misc.colorClass, 
+  menuDisplayed: state.misc.menuDisplayed } };
 const mapDispatchToProps = dispatch => {
-  return { changeColor: () => { dispatch(changeColor()); }} };
+  return { changeColor: () => { dispatch(changeColor()); },
+  displayMenu: (displayed) => { dispatch(displayMenu(displayed)); } }};
 class UnconnectedHeader extends React.Component{
   componentDidMount(){
     this.props.changeColor();
-    window.addEventListener('resize', this.closeMenuAsNeeded);
+    window.addEventListener('resize', ()=>this.closeMenuAsNeeded());
   }
     render(){
       document.body.classList=this.props.colorClass
@@ -24,11 +26,14 @@ class UnconnectedHeader extends React.Component{
         <NavigationItem styleName={leftNavigation} URL="/privacy" title="Privacy"/>
       </ul><span className={"navigation-bar navigation-list "+this.props.colorClass}>
         <a className={"navigation-item float-left navigation-link hide-for-not-small"} 
-        href=''>Celeritas Apps</a><MenuBars/></span></nav>);
+        href=''>Celeritas Apps</a><MenuBars onClick={()=>this.closeMenuAsNeeded()}/></span></nav>);
     }
 
     closeMenuAsNeeded(){
-        console.log(window.innerWidth)
+      if(this.props.menuDisplayed&&window.innerWidth>600){
+        this.props.displayMenu(false)
+      }
+        
     }
 }
 const Header=connect(mapStateToProps, mapDispatchToProps)(UnconnectedHeader)

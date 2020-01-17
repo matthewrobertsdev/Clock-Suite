@@ -1,11 +1,12 @@
 
 const initialState = {
-    colorClass: getColorClass()
+    colorClass: getColorClass(), menuDisplayed: false
 }
 
 export default function defaultReducer(state = initialState, action) {
     switch (action.type) {
         case 'CHANGE_COLOR': return { ...state, colorClass: getColorClass() };
+        case 'CHANGE_MENU': return { ...state, menuDisplayed: action.displayed };
         default: return state;
     }
 }
