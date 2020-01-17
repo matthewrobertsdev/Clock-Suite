@@ -3,8 +3,9 @@ import { connect } from 'react-redux'
 import NavMenu from './NavMenu'
 import MenuBars from './MenuBars'
 import {changeColor, displayMenu} from '../management/DefaultReducerActions'
-import './App.css';
-import './Colors.css';
+import './App.css'
+import './NavigationStyle.css'
+import './Colors.css'
 const mapStateToProps = (state) => { return { colorClass: state.misc.colorClass, 
   menuDisplayed: state.misc.menuDisplayed } };
 const mapDispatchToProps = dispatch => {

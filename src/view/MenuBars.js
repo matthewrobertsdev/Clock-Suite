@@ -1,6 +1,7 @@
 import React from 'react'
 import { connect } from 'react-redux'
 import {displayMenu} from '../management/DefaultReducerActions'
+import './NavigationStyle.css'
 import './App.css';
 const mapStateToProps = (state) => { return { menuDisplayed: state.misc.menuDisplayed } };
 const mapDispatchToProps = dispatch => {
