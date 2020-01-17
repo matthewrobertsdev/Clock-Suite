@@ -88,6 +88,16 @@
   -webkit-transform: rotate(45deg) translate(0px, -8px);
   transform: rotate(45deg) translate(0px, -8px);
 }
+.main-h-1{
+  margin-left: 10%;
+}
+.text-align-center{
+  text-align: center;
+}
+.main-text{
+  margin-left: 5%;
+  margin-right: 5%;
+}
 @media screen and (max-width: 600px) {
   .hide-for-small{
     display: none;
