@@ -26,14 +26,12 @@ class UnconnectedHeader extends React.Component{
         <NavigationItem styleName={leftNavigation} URL="/privacy" title="Privacy"/>
       </ul><span className={"navigation-bar navigation-list "+this.props.colorClass}>
         <a className={"navigation-item float-left navigation-link hide-for-not-small"} 
-        href=''>Celeritas Apps</a><MenuBars onClick={()=>this.closeMenuAsNeeded()}/></span></nav>);
+        href=''>Celeritas Apps</a><MenuBars/></span></nav>);
     }
-
     closeMenuAsNeeded(){
       if(this.props.menuDisplayed&&window.innerWidth>600){
         this.props.displayMenu(false)
       }
-        
     }
 }
 const Header=connect(mapStateToProps, mapDispatchToProps)(UnconnectedHeader)
