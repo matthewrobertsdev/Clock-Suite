@@ -1,6 +1,7 @@
 import React from 'react'
-import { connect } from 'react-redux';
+import { connect } from 'react-redux'
 import NavigationItem from './NavigationItem'
+import MenuBars from './MenuBars'
 import {changeColor} from '../management/DefaultReducerActions'
 import './App.css';
 import './Colors.css';
@@ -10,6 +11,7 @@ const mapDispatchToProps = dispatch => {
 class UnconnectedHeader extends React.Component{
   componentDidMount(){
     this.props.changeColor();
+    window.addEventListener('resize', this.closeMenuAsNeeded);
   }
     render(){
       document.body.classList=this.props.colorClass
@@ -18,7 +20,11 @@ class UnconnectedHeader extends React.Component{
         <NavigationItem left={true} URL="/about" title="About"/>
         <NavigationItem left={true} URL="/contact" title="Contact"/>
         <NavigationItem left={true} URL="/privacy" title="Privacy"/>
-      </ul></nav>);
+      </ul><span className='navigation-link'>Celeritas Apps</span><MenuBars/></nav>);
+    }
+
+    closeMenuAsNeeded(){
+        console.log(window.innerWidth)
     }
 }
 const Header=connect(mapStateToProps, mapDispatchToProps)(UnconnectedHeader)
