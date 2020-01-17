@@ -24,14 +24,15 @@
 }
 .side-menu{
   width: 0;
-  position: relative;
+  position: absolute;
   z-index: 1;
   top: 0;
-  right: -200px;
+  right: 0px;
   background-color: white;
   overflow-x: hidden;
   transition: 0.5s;
-  padding-top: 41px;
+  margin-top: 20px;
+  padding-top: 20px;
 }
 .side-navigation-item{
   position: relative;
