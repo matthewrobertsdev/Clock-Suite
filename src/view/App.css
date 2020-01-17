@@ -11,13 +11,29 @@
 }
 .top-navigation-item {
   font-weight: 600;
+  display: inline-block;
+  padding: 12px 30px;
+}
+.side-menu{
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: black;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+.side-navigation-item{
+  font-weight: 600;
+  display: block;
+  padding: 12px 30px;
 }
 .top-navigation-link {
   margin: auto;
   text-decoration: none;
   color: black;
-  display: inline-block;
-  padding: 12px 30px;
 }
 .menu-bar-container {
   display: none;
@@ -68,4 +84,7 @@
 }
 .float-right{
   float: right;
+}
+.display-none{
+  display: none;
 }

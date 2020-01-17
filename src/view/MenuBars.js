@@ -13,8 +13,6 @@ class UnconnectedMenuBars extends React.Component {
         </span>)
     }
     toggleMenuState(){
-        console.log(123);
-        console.log(this.props.menuDisplayed);
         this.props.displayMenu(!this.props.menuDisplayed)
       }
 }
