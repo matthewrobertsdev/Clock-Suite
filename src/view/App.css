@@ -5,8 +5,13 @@
   text-align: center;
 }
 .main-text{
+  font-size: large;
   margin-left: 5%;
   margin-right: 5%;
+  color: black;
+}
+.ten-percent-margin{
+  margin-left: 10%;
 }
 @media screen and (max-width: 600px) {
   .hide-for-small{
