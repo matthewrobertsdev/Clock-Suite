@@ -15,12 +15,16 @@ class UnconnectedHeader extends React.Component{
   }
     render(){
       document.body.classList=this.props.colorClass
-      return(<nav className={"navigation-bar "+this.props.colorClass}><ul className="navigation-list">
-        <NavigationItem left={true} URL="/" title="Celeritas Apps"/>
-        <NavigationItem left={true} URL="/about" title="About"/>
-        <NavigationItem left={true} URL="/contact" title="Contact"/>
-        <NavigationItem left={true} URL="/privacy" title="Privacy"/>
-      </ul><span className='navigation-link'>Celeritas Apps</span><MenuBars/></nav>);
+      const leftNavigation='navigation-item float-left'
+      const hidableLeftNavigation='navigation-item float-left hide-for-small'
+      return(<nav className={"navigation-bar "+this.props.colorClass}><ul className="hide-for-small navigation-list">
+        <NavigationItem styleName={hidableLeftNavigation} URL="/" title="Celeritas Apps"/>
+        <NavigationItem styleName={leftNavigation} URL="/about" title="About"/>
+        <NavigationItem styleName={leftNavigation} URL="/contact" title="Contact"/>
+        <NavigationItem styleName={leftNavigation} URL="/privacy" title="Privacy"/>
+      </ul><span className={"navigation-bar navigation-list "+this.props.colorClass}>
+        <a className={"navigation-item float-left navigation-link hide-for-not-small"} 
+        href=''>Celeritas Apps</a><MenuBars/></span></nav>);
     }
 
     closeMenuAsNeeded(){

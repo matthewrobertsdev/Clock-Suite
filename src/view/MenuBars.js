@@ -2,10 +2,9 @@ import React from 'react'
 import './App.css';
 class UnconnectedMenuBars extends React.Component {
     render() {
-        return (<span class="menuBarContainer">
-            <div class="bar1"></div>
-            <div class="bar2"></div>
-            <div class="bar3"></div>
+        return (<span class="menu-bar-container">
+            <div class="bar-1"></div>
+            <div class="bar-2"></div>
         </span>)
     }
 }
