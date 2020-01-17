@@ -9,10 +9,10 @@
   padding: 0;
   overflow: hidden;
 }
-.navigation-item {
+.top-navigation-item {
   font-weight: 600;
 }
-.navigation-link {
+.top-navigation-link {
   margin: auto;
   text-decoration: none;
   color: black;
@@ -28,14 +28,14 @@
 .bar-1, .bar-2 {
   width: 30px;
   height: 3px;
-  background-color: white;
+  background-color: black;
   margin: 6px 0;
   transition: 0.4s;
 }
 .change-bar-1 {
   width: 30px;
   height: 3px;
-  background-color: white;
+  background-color: black;
   margin: 6px 0;
   transition: 0.4s;
   -webkit-transform: rotate(-45deg) translate(1px, 6px);
@@ -44,11 +44,11 @@
 .change-bar-2 {
   width: 30px;
   height: 3px;
-  background-color: white;
+  background-color: black;
   margin: 6px 0;
   transition: 0.4s;
-  -webkit-transform: rotate(45deg) translate(1px, -8px);
-  transform: rotate(45deg) translate(1px, -8px);
+  -webkit-transform: rotate(45deg) translate(0px, -8px);
+  transform: rotate(45deg) translate(0px, -8px);
 }
 @media screen and (max-width: 600px) {
   .hide-for-small{

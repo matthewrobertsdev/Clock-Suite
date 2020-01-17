@@ -1,6 +1,6 @@
 import React from 'react'
 import { connect } from 'react-redux'
-import NavigationItem from './NavigationItem'
+import NavMenu from './NavMenu'
 import MenuBars from './MenuBars'
 import {changeColor, displayMenu} from '../management/DefaultReducerActions'
 import './App.css';
@@ -17,16 +17,9 @@ class UnconnectedHeader extends React.Component{
   }
     render(){
       document.body.classList=this.props.colorClass
-      const leftNavigation='navigation-item float-left'
-      const hidableLeftNavigation='navigation-item float-left hide-for-small'
-      return(<nav className={"navigation-bar "+this.props.colorClass}><ul className="hide-for-small navigation-list">
-        <NavigationItem styleName={hidableLeftNavigation} URL="/" title="Celeritas Apps"/>
-        <NavigationItem styleName={leftNavigation} URL="/about" title="About"/>
-        <NavigationItem styleName={leftNavigation} URL="/contact" title="Contact"/>
-        <NavigationItem styleName={leftNavigation} URL="/privacy" title="Privacy"/>
-      </ul><span className={"navigation-bar navigation-list "+this.props.colorClass}>
-        <a className={"navigation-item float-left navigation-link hide-for-not-small"} 
-        href=''>Celeritas Apps</a><MenuBars/></span></nav>);
+      return(<nav className={"navigation-bar "+this.props.colorClass}><NavMenu/><span className={"navigation-bar navigation-list "+this.props.colorClass}>
+        <a className={"top-navigation-item float-left top-navigation-link hide-for-not-small"} 
+    href=''>Celeritas Apps</a><MenuBars/><br></br>{this.props.menuDisplayed ? <NavMenu sideMenu={true}/> : <span/>}</span></nav>);
     }
     closeMenuAsNeeded(){
       if(this.props.menuDisplayed&&window.innerWidth>600){
