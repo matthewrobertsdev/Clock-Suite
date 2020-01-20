@@ -6,7 +6,7 @@ class UnconnectedContactPage extends React.Component {
         return (<div className={'main-background main-'+this.props.colorClass}>
             <br></br><h1 className='main-h-1'>Reach out!</h1>
             <div className='main-text'>Do you have a question or feedback about a Cerlitas product?  
-            Please do not hesitate.  Send the founder an email at:<br></br><br></br>
+            Please do not hesitate.  Send the developer an email at:<br></br><br></br>
             <a className='main-text ten-percent-margin' href="mailto:matt.roberts.is@gmail.com">matt.roberts.is@gmail.com</a></div><br></br><br></br><br></br></div>);
     }
 }
