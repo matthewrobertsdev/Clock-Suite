@@ -11,8 +11,8 @@ class UnconnectedNavMenu extends React.Component{
     const hidableLeftNavigation='top-navigation-item float-left hide-for-small'
     return(
     <ul className={menuStyle} style={this.getMenuStyle()}>
-        <NavigationItem styleName={hidableLeftNavigation} URL="/" title="Celeritas Apps"/>
-        <NavigationItem styleName={leftNavigation} URL="/about" title="About"/>
+        <NavigationItem styleName={hidableLeftNavigation} URL="/" title="Clock Suite"/>
+        {/*<NavigationItem styleName={leftNavigation} URL="/about" title="About"/>*/}
         <NavigationItem styleName={leftNavigation} URL="/contact" title="Contact"/>
         <NavigationItem styleName={leftNavigation} URL="/privacy" title="Privacy"/>
       </ul>)

@@ -20,7 +20,7 @@ class UnconnectedHeader extends React.Component{
       document.body.classList=this.props.colorClass
       return(<nav className={"navigation-bar "+this.props.colorClass}><NavMenu/><span className={"navigation-bar navigation-list hide-for-not-small "+this.props.colorClass}>
         <a className={"top-navigation-item float-left top-navigation-link"} 
-    href=''>Celeritas Apps</a><MenuBars/><br></br><NavMenu sideMenu={true}/></span></nav>);
+    href=''>Clock Suite</a><MenuBars/><br></br><NavMenu sideMenu={true}/></span></nav>);
     }
     closeMenuAsNeeded(){
       if(this.props.menuDisplayed&&window.innerWidth>600){
