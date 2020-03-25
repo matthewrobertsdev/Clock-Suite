@@ -5,7 +5,8 @@
   text-align: center;
 }
 .main-text{
-  font-size: large;
+  font-weight: 600;
+  font-size: x-large;
   margin-left: 5%;
   margin-right: 5%;
   color: black;
@@ -19,6 +20,9 @@
   }
   .menu-bar-container {
     display: block;
+  }
+  .main-text{
+    font-size: large;
   }
 }
 @media screen and (min-width: 600px) {
