@@ -15,6 +15,7 @@ class UnconnectedHeader extends React.Component{
   componentDidMount(){
     this.props.changeColor();
     window.addEventListener('resize', ()=>this.closeMenuAsNeeded());
+    window.document.title="Clock Suite"
   }
     render(){
       document.body.classList=this.props.colorClass
