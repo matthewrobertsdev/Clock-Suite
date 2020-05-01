@@ -14,7 +14,6 @@ const Header = ()=> {
   window.addEventListener('resize', () => closeMenuAsNeeded());
   window.document.title="Clock Suite"; document.body.classList=colorClass})
     return (
-      //
       <nav className={"navigation-bar "+colorClass}><NavMenu/><span className={"navigation-bar navigation-list hide-for-not-small "+colorClass}>
         <a className={"top-navigation-item float-left top-navigation-link"} 
     href=''>Clock Suite</a><MenuBars/><br></br><NavMenu sideMenu={true}/></span></nav>)
