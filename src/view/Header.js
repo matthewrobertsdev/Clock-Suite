@@ -18,12 +18,12 @@ const Header = ()=> {
   window.addEventListener('resize', () => closeMenuAsNeeded());
   window.document.title="Clock Suite"; document.body.classList=colorClass})
     return (
-      <nav className={"navigation-bar "+colorClass}><ul className={menuStyle}>
+      <nav className={"navigation-bar "+colorClass}>
       <NavigationItem styleName={leftNavigation} URL="/" title="Clock Suite"/>
       {/*<NavigationItem styleName={leftNavigation} URL="/about" title="About"/>*/}
       <NavigationItem styleName={leftNavigation} URL="/contact" title="Contact"/>
       <NavigationItem styleName={leftNavigation} URL="/privacy" title="Privacy"/>
-    </ul></nav>)
+    </nav>)
     function closeMenuAsNeeded(){
       if(menuDisplayed&&window.innerWidth>600){
         displayMenu(false)
