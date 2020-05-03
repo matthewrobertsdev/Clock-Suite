@@ -1,9 +1,29 @@
 import React from 'react';
-import { connect, useSelector } from 'react-redux';
+import { useSelector } from 'react-redux';
+import TimerImage from "../resources/LightTimer.png";
+import ClockVideo from "../resources/Clock.mp4";
+import AnalogClockVideo from "../resources/AnalogClock.mp4";
+import RedClockImage from "../resources/RedClock.png";
+import OrangeClockImage from "../resources/OrangeClock.png";
+import YellowClockImage from "../resources/YellowClock.png";
+import GreenClockImage from "../resources/GreenClock.png";
+import BlueClockImage from "../resources/BlueClock.png";
+import PurpleClockImage from "../resources/PurpleClock.png";
+import PinkClockImage from "../resources/PinkClock.png";
+import BrownClockImage from "../resources/BrownClock.png";
+//import BlackClockImage from "../resources/BlackClock.png";
+//import GrayClockImage from "../resources/GrayClock.png";
+//import WhiteClockImage from "../resources/WhiteClock.png";
+
+
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import {Carousel} from 'react-responsive-carousel';
+//var Carousel = require('react-responsive-carousel').Carousel;
 const Home = () => {
     const colorClass=useSelector(state => state.misc.colorClass)
-        return (<div><div className={'main-background main-'+colorClass}>
+        return (<div><div className={'main-background main-'+colorClass}><div className="main-margin">
         <br></br>
+        <img src={GreenClockImage} alt="Green Clock Suite"></img>
         <h1 className="text-align-center">
             A Great Clock Suite for your Mac--Alarms, Timers, a Resizable 
             Clock and a Dock Clock for your Mac's Dock.  All in 
@@ -16,7 +36,7 @@ const Home = () => {
             Up to 24 Alarms.
         </h1>
         <h1 className="text-align-center">
-            3 Countdown Timer that can be set for up to 
+            3 Countdown Timers that can be set for up to 
             23:59:59 hours each, or as short as you like.
         </h1>
         <h3 className="text-align-center">
@@ -40,6 +60,7 @@ const Home = () => {
             tell it to sleep, so you don’t have to worry that 
             your alarm or timer will not go off.
         </h3>
+        <img src={TimerImage} alt="Countdown Timer"></img>
         <h1 className="text-align-center">
             Colors
         </h1>
@@ -54,6 +75,34 @@ const Home = () => {
             the app’s colors will automatically change when 
             dark mode or light mode changes.
         </h3>
+        <div className="carousel">
+        <Carousel showArrows={true} className="carousel-style">
+                <div>
+                    <img src={RedClockImage} alt="Clock Suite Red Color Scheme in Light Mode"/>
+                </div>
+                <div>
+                    <img src={OrangeClockImage} alt="Clock Suite Orange Color Scheme in Light Mode"/>
+                </div>
+                <div>
+                    <img src={YellowClockImage} alt="Clock Suite Yellow Color Scheme in Light Mode"/>
+                </div>
+                <div>
+                    <img src={GreenClockImage} alt="Clock Suite Green Color Scheme in Light Mode"/>
+                </div>
+                <div>
+                    <img src={BlueClockImage} alt="Clock Suite Blue Color Scheme in Light Mode"/>
+                </div>
+                <div>
+                    <img src={PurpleClockImage} alt="Clock Suite Purple Color Scheme in Light Mode"/>
+                </div>
+                <div>
+                    <img src={PinkClockImage} alt="Clock Suite Pink Color Scheme in Light Mode"/>
+                </div>
+                <div>
+                    <img src={BrownClockImage} alt="Clock Suite Brown Color Scheme in Light Mode"/>
+                </div>
+        </Carousel>
+        </div>
         <h3 className="text-align-center">
             —Unified colors for the entire app with a single click.
         </h3>
@@ -71,9 +120,23 @@ const Home = () => {
         <h3 className="text-align-center">
             —Can be digital or analog.
         </h3>
+        <video controls>
+            <source src={AnalogClockVideo} type="video/mp4"/>
+            Your browser does not support the video tag.
+        </video>
+        <br></br>
+        <br></br>
+        <br></br>
         <h3 className="text-align-center">
             —Can show or hide the date and the day of the week.
         </h3>
+        <video controls>
+            <source src={ClockVideo} type="video/mp4"/>
+            Your browser does not support the video tag.
+        </video>
+        <br></br>
+        <br></br>
+        <br></br>
         <h1 className="text-align-center">
             Dock Clock
         </h1>
@@ -86,6 +149,7 @@ const Home = () => {
         <h3 className="text-align-center">
             —Can be digital or analog.
         </h3>
+        </div>
         <br></br>
         </div>
         <br></br><br></br>

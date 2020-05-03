@@ -4,6 +4,16 @@
 .text-align-center{
   text-align: center;
 }
+video {
+  display: block;
+  margin: auto;
+  width: 640px;
+  height: 480px;
+}
+.main-margin{
+  margin-left: 5%;
+  margin-right: 5%;
+}
 .main-text{
   font-weight: 600;
   font-size: x-large;
@@ -20,6 +30,19 @@
 .main-text{
   font-size: large;
 }
+img {
+  display: block;
+  margin: auto;
+  width: 640px;
+  height: auto;
+}
+
+.carousel-style{
+  display: block;
+  margin: auto;
+  width: 640px;
+  height: auto;
+}
 
 @media screen and (max-width: 600px) {
   .hide-for-small{
@@ -30,6 +53,20 @@
   }
   .main-text{
     font-size: large;
+  }
+}
+@media screen and (max-width: 640px) {
+  img{
+    width: 100%;
+    height: auto;
+  }
+  video{
+    width: 100%;
+    height: auto;
+  }
+  .carousel-style{
+    width: 100%;
+    height: auto;
   }
 }
 /*
