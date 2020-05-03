@@ -3,17 +3,38 @@ import { useSelector } from 'react-redux';
 import TimerImage from "../resources/LightTimer.png";
 import ClockVideo from "../resources/Clock.mp4";
 import AnalogClockVideo from "../resources/AnalogClock.mp4";
-import RedClockImage from "../resources/RedClock.png";
-import OrangeClockImage from "../resources/OrangeClock.png";
-import YellowClockImage from "../resources/YellowClock.png";
-import GreenClockImage from "../resources/GreenClock.png";
-import BlueClockImage from "../resources/BlueClock.png";
-import PurpleClockImage from "../resources/PurpleClock.png";
-import PinkClockImage from "../resources/PinkClock.png";
-import BrownClockImage from "../resources/BrownClock.png";
-//import BlackClockImage from "../resources/BlackClock.png";
-//import GrayClockImage from "../resources/GrayClock.png";
-//import WhiteClockImage from "../resources/WhiteClock.png";
+
+import AlarmSetUpImage from "../resources/AlarmSetUp.png";
+import TimerSetUpImage from "../resources/TimerSetUp.png";
+
+
+import CustomColorClockImage from "../resources/LightModeClockSmall/CustomColorClockLight.png";
+import RedClockImage from "../resources/LightModeClockSmall/RedClockLight.png";
+import OrangeClockImage from "../resources/LightModeClockSmall/OrangeClockLight.png";
+import YellowClockImage from "../resources/LightModeClockSmall/YellowClockLight.png";
+import GreenClockImage from "../resources/LightModeClockSmall/GreenClockLight.png";
+import BlueClockImage from "../resources/LightModeClockSmall/BlueClockLight.png";
+import PurpleClockImage from "../resources/LightModeClockSmall/PurpleClockLight.png";
+import PinkClockImage from "../resources/LightModeClockSmall/PinkClockLight.png";
+import BrownClockImage from "../resources/LightModeClockSmall/BrownClockLight.png";
+import GrayClockImage from "../resources/LightModeClockSmall/GrayClockLight.png";
+import WhiteClockImage from "../resources/LightModeClockSmall/WhiteClockLight.png";
+
+import CustomColorClockDarkImage from "../resources/DarkModeClockSmall/CustomColorClockDark.png";
+import RedClockDarkImage from "../resources/DarkModeClockSmall/RedClockDark.png";
+import OrangeClockDarkImage from "../resources/DarkModeClockSmall/OrangeClockDark.png";
+import YellowClockDarkImage from "../resources/DarkModeClockSmall/YellowClockDark.png";
+import GreenClockDarkImage from "../resources/DarkModeClockSmall/GreenClockDark.png";
+import BlueClockDarkImage from "../resources/DarkModeClockSmall/BlueClockDark.png";
+import PurpleClockDarkImage from "../resources/DarkModeClockSmall/PurpleClockDark.png";
+import PinkClockDarkImage from "../resources/DarkModeClockSmall/PinkClockDark.png";
+import BrownClockDarkImage from "../resources/DarkModeClockSmall/BrownClockDark.png";
+import BlackClockDarkImage from "../resources/DarkModeClockSmall/BlackClockDark.png";
+import GrayClockDarkImage from "../resources/DarkModeClockSmall/GrayClockDark.png";
+import WhiteClockDarkImage from "../resources/DarkModeClockSmall/WhiteClockDark.png";
+
+import DockClockImage from "../resources/DockClock.png";
+import DockClockVideo from "../resources/DockClock.mp4";
 
 
 import "react-responsive-carousel/lib/styles/carousel.min.css";
@@ -79,6 +100,9 @@ const Home = () => {
             The app’s colors will automatically change when
             dark mode or light mode changes.
         </h3>
+        <h2 className="text-align-center">
+            Light Mode
+        </h2>
         <div className="carousel">
             <Carousel showArrows={true} className="carousel-style">
                 <div>
@@ -105,6 +129,58 @@ const Home = () => {
                 <div>
                     <img src={BrownClockImage} alt="Clock Suite Brown Color Scheme in Light Mode" />
                 </div>
+                <div>
+                    <img src={GrayClockImage} alt="Clock Suite Gray Color Scheme in Light Mode" />
+                </div>
+                <div>
+                    <img src={WhiteClockImage} alt="Clock Suite White Color Scheme in Light Mode" />
+                </div>
+                <div>
+                    <img src={CustomColorClockImage} alt="Clock Suite Custom Color Scheme in Light Mode" />
+                </div>
+            </Carousel>
+        </div>
+        <h2 className="text-align-center">
+            Dark Mode
+        </h2>
+        <div className="carousel">
+            <Carousel showArrows={true} className="carousel-style">
+                <div>
+                    <img src={RedClockDarkImage} alt="Clock Suite Red Color Scheme in Dark Mode" />
+                </div>
+                <div>
+                    <img src={OrangeClockDarkImage} alt="Clock Suite Orange Color Scheme in Dark Mode" />
+                </div>
+                <div>
+                    <img src={YellowClockDarkImage} alt="Clock Suite Yellow Color Scheme in Dark Mode" />
+                </div>
+                <div>
+                    <img src={GreenClockDarkImage} alt="Clock Suite Green Color Scheme in Dark Mode" />
+                </div>
+                <div>
+                    <img src={BlueClockDarkImage} alt="Clock Suite Blue Color Scheme in Dark Mode" />
+                </div>
+                <div>
+                    <img src={PurpleClockDarkImage} alt="Clock Suite Purple Color Scheme in Dark Mode" />
+                </div>
+                <div>
+                    <img src={PinkClockDarkImage} alt="Clock Suite Pink Color Scheme in Dark Mode" />
+                </div>
+                <div>
+                    <img src={BrownClockDarkImage} alt="Clock Suite Brown Color Scheme in Dark Mode" />
+                </div>
+                <div>
+                    <img src={BlackClockDarkImage} alt="Clock Suite Black Color Scheme in Dark Mode" />
+                </div>
+                <div>
+                    <img src={GrayClockDarkImage} alt="Clock Suite Gray Color Scheme in Dark Mode" />
+                </div>
+                <div>
+                    <img src={WhiteClockDarkImage} alt="Clock Suite White Color Scheme in Dark Mode" />
+                </div>
+                <div>
+                    <img src={CustomColorClockDarkImage} alt="Clock Suite Custom Color Scheme in Dark Mode" />
+                </div>
             </Carousel>
         </div>
         <h3 className="text-align-center">
@@ -119,10 +195,12 @@ const Home = () => {
         <h2 className="text-align-center">
             Up to 24 Alarms.
         </h2>
+        <img src={AlarmSetUpImage} alt="Alarm Set-Up" />
         <h2 className="text-align-center">
             3 Countdown Timers that can be set for up to
             23:59:59 hours each, or as short as you like.
         </h2>
+        <img src={TimerSetUpImage} alt="Timer Set-Up" />
         <h3 className="text-align-center">
             —Countdown Timer counting-down is visible as time passes.
         </h3>
@@ -157,6 +235,10 @@ const Home = () => {
         <h3 className="text-align-center">
             —Can be digital or analog.
         </h3>
+        <video controls poster={DockClockImage}>
+            <source src={DockClockVideo} type="video/mp4"/>
+            Your browser does not support the video tag.
+        </video>
     </div>
         <br></br>
     </div>
