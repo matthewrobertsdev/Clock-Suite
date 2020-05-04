@@ -2,9 +2,9 @@ import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Header from '../view/Header';
 import Home from '../view/Home';
-import AboutPage from '../view/AboutPage';
 import ContactPage from '../view/ContactPage';
-import PrivacyPolicyPage from '../view/PrivacyPolicyPage'
+import PrivacyPolicyPage from '../view/PrivacyPolicyPage';
+import Footer from '../view/Footer';
 //homepage
 //support
 //about
@@ -21,6 +21,7 @@ export default function AppRouter() {
                     <Route path="/privacy" exact component={PrivacyPolicyPage} />
                     <Route component={Home} />
                 </Switch>
+                <Footer/>
             </div>
         </BrowserRouter>
     );

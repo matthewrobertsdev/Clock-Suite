@@ -1,12 +1,10 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
-import TimerImage from "../resources/LightTimer.png";
-import ClockVideo from "../resources/Clock.mp4";
-import AnalogClockVideo from "../resources/AnalogClock.mp4";
 
-import AlarmSetUpImage from "../resources/AlarmSetUp.png";
-import TimerSetUpImage from "../resources/TimerSetUp.png";
-
+import ClockAnalogSecondsVideo from "../resources/ClockAnalogSeconds.mp4";
+import ClockAnalogSecondsImage from "../resources/ClockAnalogSeconds.png";
+import ClockShowHideDateVideo from "../resources/ClockShowHideDate.mp4";
+import ClockShowHideDateImage from "../resources/ClockShowHideDate.png";
 
 import CustomColorClockImage from "../resources/LightModeClockSmall/CustomColorClockLight.png";
 import RedClockImage from "../resources/LightModeClockSmall/RedClockLight.png";
@@ -30,16 +28,24 @@ import PurpleClockDarkImage from "../resources/DarkModeClockSmall/PurpleClockDar
 import PinkClockDarkImage from "../resources/DarkModeClockSmall/PinkClockDark.png";
 import BrownClockDarkImage from "../resources/DarkModeClockSmall/BrownClockDark.png";
 import BlackClockDarkImage from "../resources/DarkModeClockSmall/BlackClockDark.png";
+import SystemDarkClockDarkImage from "../resources/DarkModeClockSmall/SystemDarkClockDark.png";
 import GrayClockDarkImage from "../resources/DarkModeClockSmall/GrayClockDark.png";
 import WhiteClockDarkImage from "../resources/DarkModeClockSmall/WhiteClockDark.png";
+
+import AlarmSetUpImage from "../resources/AlarmSetUp.png";
+import TimerSetUpImage from "../resources/TimerSetUp.png";
+
+import UseTimerImage from "../resources/UseTimer.png";
+import UseTimerVideo from "../resources/UseTimer.mp4";
+
+import TimerImage from "../resources/LightTimer.png";
 
 import DockClockImage from "../resources/DockClock.png";
 import DockClockVideo from "../resources/DockClock.mp4";
 
-
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
-//var Carousel = require('react-responsive-carousel').Carousel;
+
 const Home = () => {
     const colorClass = useSelector(state => state.misc.colorClass)
     return (<div><div className={'main-background main-' + colorClass}><div className="main-margin">
@@ -69,8 +75,8 @@ const Home = () => {
         <h3 className="text-align-center">
             —Can be digital or analog.
         </h3>
-        <video controls>
-            <source src={AnalogClockVideo} type="video/mp4" />
+        <video controls poster={ClockAnalogSecondsImage}>
+            <source src={ClockAnalogSecondsVideo} type="video/mp4"/>
             Your browser does not support the video tag.
         </video>
         <br></br>
@@ -79,8 +85,8 @@ const Home = () => {
         <h3 className="text-align-center">
             —Can show or hide the date and the day of the week.
         </h3>
-        <video controls>
-            <source src={ClockVideo} type="video/mp4" />
+        <video controls poster={ClockShowHideDateImage}>
+            <source src={ClockShowHideDateVideo} type="video/mp4" />
             Your browser does not support the video tag.
         </video>
         <br></br>
@@ -173,6 +179,9 @@ const Home = () => {
                     <img src={BlackClockDarkImage} alt="Clock Suite Black Color Scheme in Dark Mode" />
                 </div>
                 <div>
+                    <img src={SystemDarkClockDarkImage} alt="Clock Suite System Dark Color Scheme in Dark Mode" />
+                </div>
+                <div>
                     <img src={GrayClockDarkImage} alt="Clock Suite Gray Color Scheme in Dark Mode" />
                 </div>
                 <div>
@@ -204,6 +213,10 @@ const Home = () => {
         <h3 className="text-align-center">
             —Countdown Timer counting-down is visible as time passes.
         </h3>
+        <video controls poster={UseTimerImage}>
+            <source src={UseTimerVideo} type="video/mp4"/>
+            Your browser does not support the video tag.
+        </video>
         <h1 className="text-align-center">
             Alerts and Songs
         </h1>
@@ -242,7 +255,6 @@ const Home = () => {
     </div>
         <br></br>
     </div>
-        <br></br><br></br>
     </div>);
 }
 export default Home;
