@@ -1,11 +1,11 @@
 //Copyright  © 2020  Matt Roberts
 import React, { useEffect } from 'react'
 import {useSelector } from 'react-redux'
-import {displayMenu} from '../management/DefaultReducerActions'
+import {displayMenu} from '../store/DefaultReducerActions'
 import NavigationItem from './NavigationItem'
-import './App.css'
-import './NavigationStyle.css'
-import './Colors.css'
+import '../styles/App.css'
+import '../styles/NavigationStyle.css'
+import '../styles/Colors.css'
 const Header = () => {
   const colorClass=useSelector(state => state.misc.colorClass)
   const menuDisplayed=useSelector(state => state.misc.menuDisplayed)

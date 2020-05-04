@@ -1,11 +1,11 @@
 //Copyright  © 2020  Matt Roberts
 import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import Header from '../view/Header';
-import HomePage from '../view/HomePage';
-import ContactPage from '../view/ContactPage';
-import PrivacyPolicyPage from '../view/PrivacyPolicyPage';
-import Footer from '../view/Footer';
+import Header from './components/Header';
+import HomePage from './pages/HomePage';
+import ContactPage from './pages/ContactPage';
+import PrivacyPolicyPage from './pages/PrivacyPolicyPage';
+import Footer from './components/Footer';
 //homepage
 //support
 //about
