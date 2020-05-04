@@ -1,3 +1,4 @@
+//Copyright  © 2020  Matt Roberts
 import React from 'react';
 const Footer = () => {
     return (<div>

@@ -1,14 +1,12 @@
 import React, { useEffect } from 'react'
 import {useSelector } from 'react-redux'
-import NavMenu from './NavMenu'
-import MenuBars from './MenuBars'
 import {displayMenu} from '../management/DefaultReducerActions'
 import NavigationItem from './NavigationItem'
 import './App.css'
 import './NavigationStyle.css'
 import './Colors.css'
 
-const Header = ()=> {
+const Header = () => {
   const colorClass=useSelector(state => state.misc.colorClass)
   const menuDisplayed=useSelector(state => state.misc.menuDisplayed)
   let menuStyle="navigation-list"
