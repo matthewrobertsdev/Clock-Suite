@@ -1,3 +1,4 @@
+//Copyright  © 2020  Matt Roberts
 import React, { useEffect } from 'react'
 import {useSelector } from 'react-redux'
 import {displayMenu} from '../management/DefaultReducerActions'
@@ -5,12 +6,9 @@ import NavigationItem from './NavigationItem'
 import './App.css'
 import './NavigationStyle.css'
 import './Colors.css'
-
 const Header = () => {
   const colorClass=useSelector(state => state.misc.colorClass)
   const menuDisplayed=useSelector(state => state.misc.menuDisplayed)
-  let menuStyle="navigation-list"
-    menuStyle+=colorClass
     const leftNavigation='top-navigation-item float-left'
   useEffect(()=> {
   window.addEventListener('resize', () => closeMenuAsNeeded());
