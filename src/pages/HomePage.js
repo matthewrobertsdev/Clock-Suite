@@ -3,7 +3,7 @@ import React from 'react';
 import { useSelector } from 'react-redux';
 
 import ClockAnalogSecondsVideo from "../resources/ClockAnalogSeconds.mp4";
-import ClockAnalogSecondsImage from "../resources/ClockAnalogSeconds.png";
+import AnalogClockImage from "../resources/AnalogClock.png";
 import ClockShowHideDateVideo from "../resources/ClockShowHideDate.mp4";
 import ClockShowHideDateImage from "../resources/ClockShowHideDate.png";
 
@@ -51,7 +51,7 @@ const Home = () => {
     const colorClass = useSelector(state => state.misc.colorClass)
     return (<div><div className={'main-background main-' + colorClass}><div className="main-margin">
         <br></br>
-        <h1 className="text-align-center">
+        <h1 className="text-align-center title">
             Clock Suite
         </h1>
         <img src={GreenClockImage} alt="Green Clock Suite"></img>
@@ -76,7 +76,7 @@ const Home = () => {
         <h3 className="text-align-center">
             —Can be digital or analog.
         </h3>
-        <video controls poster={ClockAnalogSecondsImage}>
+        <video controls poster={AnalogClockImage}>
             <source src={ClockAnalogSecondsVideo} type="video/mp4"/>
             Your browser does not support the video tag.
         </video>

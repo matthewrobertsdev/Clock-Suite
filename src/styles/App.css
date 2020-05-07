@@ -39,6 +39,11 @@ img {
   width: 640px;
   height: auto;
 }
+
+.title {
+  font-size: 50px;
+  font-weight: 600;
+}
 .copyright{
   font-weight: 600;
 }
