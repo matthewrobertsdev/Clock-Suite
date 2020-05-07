@@ -1,0 +1,12 @@
+//Copyright  © 2020  Matt Roberts
+import React from 'react';
+const Footer = () => {
+    return (<div>
+    <br></br><br></br>
+    <div className="text-align-center copyright">
+        Copyright  © 2020  Matt Roberts
+    </div>
+    <br></br><br></br>
+    </div>);
+}
+export default Footer;
