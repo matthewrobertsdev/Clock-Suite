@@ -2,9 +2,10 @@
 Copyright  © 2020  Matt Roberts
 */
 import React, { useEffect } from 'react';
-import {useSelector } from 'react-redux'
+import {useSelector, useDispatch } from 'react-redux'
 const ContactPage = () => {
-    useEffect(()=>{document.title = "Clock Suite | Contact"})
+    const dispatch=useDispatch()
+    useEffect(()=>{dispatch({type: 'CHANGE_COLOR'});document.title = "Clock Suite | Contact"})
     const colorClass=useSelector(state => state.misc.colorClass)
         return (<div className={'main-background main-'+
                 colorClass}>

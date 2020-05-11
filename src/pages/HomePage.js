@@ -1,6 +1,6 @@
 //Copyright  © 2020  Matt Roberts
 import React, { useEffect } from 'react';
-import { useSelector } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux';
 
 import ClockAnalogSecondsVideo from "../resources/ClockAnalogSeconds.mp4";
 import AnalogClockImage from "../resources/AnalogClock.png";
@@ -48,7 +48,8 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
 
 const Home = () => {
-    useEffect(()=>{document.title = "Clock Suite"})
+    const dispatch=useDispatch()
+    useEffect(()=>{dispatch({type: 'CHANGE_COLOR'});document.title = "Clock Suite"})
     const colorClass = useSelector(state => state.misc.colorClass)
     return (<div><div className={'main-background main-' + colorClass}><div className="main-margin">
         <br></br>
