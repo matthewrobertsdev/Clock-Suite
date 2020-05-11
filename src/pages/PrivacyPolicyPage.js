@@ -1,7 +1,8 @@
 //Copyright  © 2020  Matt Roberts
-import React from 'react';
+import React, { useEffect } from 'react';
 import {useSelector } from 'react-redux'
 const PrivacyPolicyPage = () => {
+    useEffect(()=>{document.title = "Clock Suite | Privacy Policy"})
         const colorClass=useSelector(state => state.misc.colorClass)
         return (<div className={'main-background main-'+colorClass}>
             <br></br>

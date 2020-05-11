@@ -10,7 +10,7 @@ import Footer from './components/Footer';
 //support
 //about
 //later: products
-export default function AppRouter() {
+const AppRouter = () => {
     return (
         <BrowserRouter>
                 <Header />
@@ -25,3 +25,4 @@ export default function AppRouter() {
         </BrowserRouter>
     );
 }
+export default AppRouter;
