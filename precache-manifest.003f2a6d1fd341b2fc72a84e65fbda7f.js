@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "7cb6dbdbd0ff4262432e77fc850235bd",
+    "revision": "1ad58547311c500c52200b3c340d8cf8",
     "url": "/Clock-Suite/index.html"
   },
   {
-    "revision": "a8db5582248874463bb1",
+    "revision": "51ee10e8bfa314e58557",
     "url": "/Clock-Suite/static/css/2.1c164e0d.chunk.css"
   },
   {
-    "revision": "ce5d50772bcb1f7b5981",
+    "revision": "9da551fd8065bf608414",
     "url": "/Clock-Suite/static/css/main.c2073cb3.chunk.css"
   },
   {
-    "revision": "a8db5582248874463bb1",
-    "url": "/Clock-Suite/static/js/2.24f13cbc.chunk.js"
+    "revision": "51ee10e8bfa314e58557",
+    "url": "/Clock-Suite/static/js/2.00ba49f1.chunk.js"
   },
   {
     "revision": "835f8c4881e2390f17168c1c201e1e57",
-    "url": "/Clock-Suite/static/js/2.24f13cbc.chunk.js.LICENSE"
+    "url": "/Clock-Suite/static/js/2.00ba49f1.chunk.js.LICENSE"
   },
   {
-    "revision": "ce5d50772bcb1f7b5981",
-    "url": "/Clock-Suite/static/js/main.ecb023e9.chunk.js"
+    "revision": "9da551fd8065bf608414",
+    "url": "/Clock-Suite/static/js/main.bc0d02c1.chunk.js"
   },
   {
     "revision": "96caa4b03a1791a15943",

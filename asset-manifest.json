@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/Clock-Suite/static/css/main.c2073cb3.chunk.css",
-    "main.js": "/Clock-Suite/static/js/main.ecb023e9.chunk.js",
-    "main.js.map": "/Clock-Suite/static/js/main.ecb023e9.chunk.js.map",
+    "main.js": "/Clock-Suite/static/js/main.bc0d02c1.chunk.js",
+    "main.js.map": "/Clock-Suite/static/js/main.bc0d02c1.chunk.js.map",
     "runtime-main.js": "/Clock-Suite/static/js/runtime-main.bef84d6a.js",
     "runtime-main.js.map": "/Clock-Suite/static/js/runtime-main.bef84d6a.js.map",
     "static/css/2.1c164e0d.chunk.css": "/Clock-Suite/static/css/2.1c164e0d.chunk.css",
-    "static/js/2.24f13cbc.chunk.js": "/Clock-Suite/static/js/2.24f13cbc.chunk.js",
-    "static/js/2.24f13cbc.chunk.js.map": "/Clock-Suite/static/js/2.24f13cbc.chunk.js.map",
+    "static/js/2.00ba49f1.chunk.js": "/Clock-Suite/static/js/2.00ba49f1.chunk.js",
+    "static/js/2.00ba49f1.chunk.js.map": "/Clock-Suite/static/js/2.00ba49f1.chunk.js.map",
     "index.html": "/Clock-Suite/index.html",
-    "precache-manifest.66dd632505fc3118be80880ecf93b357.js": "/Clock-Suite/precache-manifest.66dd632505fc3118be80880ecf93b357.js",
+    "precache-manifest.003f2a6d1fd341b2fc72a84e65fbda7f.js": "/Clock-Suite/precache-manifest.003f2a6d1fd341b2fc72a84e65fbda7f.js",
     "service-worker.js": "/Clock-Suite/service-worker.js",
     "static/css/2.1c164e0d.chunk.css.map": "/Clock-Suite/static/css/2.1c164e0d.chunk.css.map",
     "static/css/main.c2073cb3.chunk.css.map": "/Clock-Suite/static/css/main.c2073cb3.chunk.css.map",
-    "static/js/2.24f13cbc.chunk.js.LICENSE": "/Clock-Suite/static/js/2.24f13cbc.chunk.js.LICENSE",
+    "static/js/2.00ba49f1.chunk.js.LICENSE": "/Clock-Suite/static/js/2.00ba49f1.chunk.js.LICENSE",
     "static/media/AlarmSetUp.png": "/Clock-Suite/static/media/AlarmSetUp.38a53c55.png",
     "static/media/AnalogClock.png": "/Clock-Suite/static/media/AnalogClock.7f59d6f1.png",
     "static/media/BlackClockDark.png": "/Clock-Suite/static/media/BlackClockDark.342d9974.png",
@@ -53,8 +53,8 @@
   "entrypoints": [
     "static/js/runtime-main.bef84d6a.js",
     "static/css/2.1c164e0d.chunk.css",
-    "static/js/2.24f13cbc.chunk.js",
+    "static/js/2.00ba49f1.chunk.js",
     "static/css/main.c2073cb3.chunk.css",
-    "static/js/main.ecb023e9.chunk.js"
+    "static/js/main.bc0d02c1.chunk.js"
   ]
 }
