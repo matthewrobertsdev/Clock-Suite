@@ -16,9 +16,9 @@ const Header = () => {
   document.body.classList=colorClass})
     return (
       <nav className={"navigation-bar "+colorClass}>
-      <Link className={leftNavigation} key={0} to="/Clock-Suite">Clock Suite</Link>
-      <Link className={leftNavigation} key={1} to="/Clock-Suite/contact">Contact</Link>
-      <Link className={leftNavigation} key={1} to="/Clock-Suite/privacy">Privacy</Link>
+      <Link className={leftNavigation} key={0} to="/">Clock Suite</Link>
+      <Link className={leftNavigation} key={1} to="/contact">Contact</Link>
+      <Link className={leftNavigation} key={1} to="/privacy">Privacy</Link>
     </nav>)
     function closeMenuAsNeeded(){
       if(menuDisplayed&&window.innerWidth>600){
