@@ -15,10 +15,10 @@ const AppRouter = () => {
         <BrowserRouter>
                 <Header />
                 <Switch>
-                <Route path="/" exact component={HomePage} />
+                <Route path="/Clock-Suite" exact component={HomePage} />
                     {/*<Route path="/about" exact component={AboutPage} />*/}
-                    <Route path="/contact" exact component={ContactPage} />
-                    <Route path="/privacy" exact component={PrivacyPolicyPage} />
+                    <Route path="/Clock-Suite/contact" exact component={ContactPage} />
+                    <Route path="/Clock-Suite/privacy" exact component={PrivacyPolicyPage} />
                     <Route component={HomePage} />
                 </Switch>
                 <Footer/>
