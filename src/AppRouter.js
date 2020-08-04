@@ -1,6 +1,6 @@
 //Copyright  © 2020  Matt Roberts
 import React from 'react';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { BrowserRouter, Route, Switch, HashRouter } from 'react-router-dom';
 import Header from './components/Header';
 import HomePage from './pages/HomePage';
 import ContactPage from './pages/ContactPage';
@@ -12,7 +12,7 @@ import Footer from './components/Footer';
 //later: products
 const AppRouter = () => {
     return (
-        <BrowserRouter>
+        <HashRouter basename='/'>
                 <Header />
                 <Switch>
                 <Route path="/Clock-Suite" exact component={HomePage} />
@@ -22,7 +22,7 @@ const AppRouter = () => {
                     <Route component={HomePage} />
                 </Switch>
                 <Footer/>
-        </BrowserRouter>
+        </HashRouter>
     );
 }
 export default AppRouter;
