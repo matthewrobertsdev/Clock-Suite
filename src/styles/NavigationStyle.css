@@ -12,6 +12,10 @@ Copyright  © 2020  Matt Roberts
   padding: 14px 16px 14px 16px;
   text-decoration: none;
   }
+
+  .selected-navigation-item{
+    border-bottom: 3.5px solid black;
+  }
   
   .top-navigation-link {
     position: relative;
@@ -58,4 +62,10 @@ Copyright  © 2020  Matt Roberts
     transition: 0.4s;
     -webkit-transform: rotate(45deg) translate(0px, -8px);
     transform: rotate(45deg) translate(0px, -8px);
+  }
+
+  @media (prefers-color-scheme: dark){
+    .selected-navigation-item{
+      border-bottom: 3.5px solid white;
+    }
   }

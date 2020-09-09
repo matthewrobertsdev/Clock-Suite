@@ -2,7 +2,7 @@
 import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 
-import ClockAnalogSecondsVideo from "../resources/ClockAnalogSeconds.mp4";
+import ClockShowHideSeconds from "../resources/ClockShowHideSeconds.mp4";
 import AnalogClockImage from "../resources/AnalogClock.png";
 import ClockShowHideDateVideo from "../resources/ClockShowHideDate.mp4";
 import ClockShowHideDateImage from "../resources/ClockShowHideDate.png";
@@ -79,7 +79,7 @@ const Home = () => {
             —Can be digital or analog.
         </h3>
         <video controls poster={AnalogClockImage}>
-            <source src={ClockAnalogSecondsVideo} type="video/mp4"/>
+            <source src={ClockShowHideSeconds} type="video/mp4"/>
             Your browser does not support the video tag.
         </video>
         <br></br>
@@ -100,9 +100,10 @@ const Home = () => {
         </h1>
         <h3 className="text-align-center">
             —Comes with 12 built-in colors and a choice to
-            choose a custom color.  Colors are a system dark or light color,
+            choose a custom color, all available with dark and light mode versions.  
+            Colors are a system dark or light color,
             black, gray, white, red, orange, yellow, green,
-            blue, purple, brown, or a custom color.
+            blue, purple, pink, brown, or a custom color.
         </h3>
         <h3 className="text-align-center">
             —Works in system-wide dark mode and light mode.
@@ -201,6 +202,11 @@ const Home = () => {
         <h3 className="text-align-center">
             —Color choice can be the background color or the foreground color.
         </h3>
+        <h3 className="text-align-center">
+            —When the color choice is the foreground, background can be dark 
+            gray or transcluent.  This can be set in preferences.
+        </h3>
+        {/* add pictures */}
         <h1 className="text-align-center">
             Alarms and Timers
         </h1>
