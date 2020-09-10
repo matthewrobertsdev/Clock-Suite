@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/Clock-Suite/static/css/main.629cd0db.chunk.css",
-    "main.js": "/Clock-Suite/static/js/main.333c1090.chunk.js",
-    "main.js.map": "/Clock-Suite/static/js/main.333c1090.chunk.js.map",
+    "main.js": "/Clock-Suite/static/js/main.5faa8ed2.chunk.js",
+    "main.js.map": "/Clock-Suite/static/js/main.5faa8ed2.chunk.js.map",
     "runtime-main.js": "/Clock-Suite/static/js/runtime-main.bef84d6a.js",
     "runtime-main.js.map": "/Clock-Suite/static/js/runtime-main.bef84d6a.js.map",
     "static/css/2.1c164e0d.chunk.css": "/Clock-Suite/static/css/2.1c164e0d.chunk.css",
-    "static/js/2.dcc4cbdb.chunk.js": "/Clock-Suite/static/js/2.dcc4cbdb.chunk.js",
-    "static/js/2.dcc4cbdb.chunk.js.map": "/Clock-Suite/static/js/2.dcc4cbdb.chunk.js.map",
+    "static/js/2.4a81328c.chunk.js": "/Clock-Suite/static/js/2.4a81328c.chunk.js",
+    "static/js/2.4a81328c.chunk.js.map": "/Clock-Suite/static/js/2.4a81328c.chunk.js.map",
     "index.html": "/Clock-Suite/index.html",
-    "precache-manifest.ff088c49f21985ac16355f0f21343f7f.js": "/Clock-Suite/precache-manifest.ff088c49f21985ac16355f0f21343f7f.js",
+    "precache-manifest.ee77c00b74bde693470ba60b42e01422.js": "/Clock-Suite/precache-manifest.ee77c00b74bde693470ba60b42e01422.js",
     "service-worker.js": "/Clock-Suite/service-worker.js",
     "static/css/2.1c164e0d.chunk.css.map": "/Clock-Suite/static/css/2.1c164e0d.chunk.css.map",
     "static/css/main.629cd0db.chunk.css.map": "/Clock-Suite/static/css/main.629cd0db.chunk.css.map",
-    "static/js/2.dcc4cbdb.chunk.js.LICENSE": "/Clock-Suite/static/js/2.dcc4cbdb.chunk.js.LICENSE",
+    "static/js/2.4a81328c.chunk.js.LICENSE": "/Clock-Suite/static/js/2.4a81328c.chunk.js.LICENSE",
     "static/media/AlarmSetUp.png": "/Clock-Suite/static/media/AlarmSetUp.82f56c29.png",
     "static/media/AnalogClock.png": "/Clock-Suite/static/media/AnalogClock.6ddff353.png",
     "static/media/BlackClockDark.png": "/Clock-Suite/static/media/BlackClockDark.cbd5634c.png",
@@ -21,6 +21,8 @@
     "static/media/BlueClockLight.png": "/Clock-Suite/static/media/BlueClockLight.1f16a20b.png",
     "static/media/BrownClockDark.png": "/Clock-Suite/static/media/BrownClockDark.b185f22e.png",
     "static/media/BrownClockLight.png": "/Clock-Suite/static/media/BrownClockLight.48e05884.png",
+    "static/media/ClockPurpleGrayBackground.png": "/Clock-Suite/static/media/ClockPurpleGrayBackground.ea66460a.png",
+    "static/media/ClockPurpleTranslucentBackground.png": "/Clock-Suite/static/media/ClockPurpleTranslucentBackground.e8ce5dc8.png",
     "static/media/ClockShowHideDate.png": "/Clock-Suite/static/media/ClockShowHideDate.1e2302ac.png",
     "static/media/ClockShowHideDate.mp4": "/Clock-Suite/static/media/ClockShowHideDate.8ab46bac.mp4",
     "static/media/ClockShowHideSeconds.mp4": "/Clock-Suite/static/media/ClockShowHideSeconds.8f0c878d.mp4",
@@ -53,8 +55,8 @@
   "entrypoints": [
     "static/js/runtime-main.bef84d6a.js",
     "static/css/2.1c164e0d.chunk.css",
-    "static/js/2.dcc4cbdb.chunk.js",
+    "static/js/2.4a81328c.chunk.js",
     "static/css/main.629cd0db.chunk.css",
-    "static/js/main.333c1090.chunk.js"
+    "static/js/main.5faa8ed2.chunk.js"
   ]
 }

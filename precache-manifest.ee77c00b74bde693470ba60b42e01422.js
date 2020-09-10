@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "1a81958a2c92fee34f1ec26808db0ae4",
+    "revision": "c72c492b201c543e705957641d9473b0",
     "url": "/Clock-Suite/index.html"
   },
   {
-    "revision": "263821d8671675db9596",
+    "revision": "4c28c5d1076be78af86b",
     "url": "/Clock-Suite/static/css/2.1c164e0d.chunk.css"
   },
   {
-    "revision": "4332d8659bb0d05ebca3",
+    "revision": "4a2b1c20e2b14f4478ec",
     "url": "/Clock-Suite/static/css/main.629cd0db.chunk.css"
   },
   {
-    "revision": "263821d8671675db9596",
-    "url": "/Clock-Suite/static/js/2.dcc4cbdb.chunk.js"
+    "revision": "4c28c5d1076be78af86b",
+    "url": "/Clock-Suite/static/js/2.4a81328c.chunk.js"
   },
   {
     "revision": "835f8c4881e2390f17168c1c201e1e57",
-    "url": "/Clock-Suite/static/js/2.dcc4cbdb.chunk.js.LICENSE"
+    "url": "/Clock-Suite/static/js/2.4a81328c.chunk.js.LICENSE"
   },
   {
-    "revision": "4332d8659bb0d05ebca3",
-    "url": "/Clock-Suite/static/js/main.333c1090.chunk.js"
+    "revision": "4a2b1c20e2b14f4478ec",
+    "url": "/Clock-Suite/static/js/main.5faa8ed2.chunk.js"
   },
   {
     "revision": "96caa4b03a1791a15943",
@@ -54,6 +54,14 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "48e058844e339677ce7f18535282b250",
     "url": "/Clock-Suite/static/media/BrownClockLight.48e05884.png"
+  },
+  {
+    "revision": "ea66460a7e426cd53d6a3537c96720fb",
+    "url": "/Clock-Suite/static/media/ClockPurpleGrayBackground.ea66460a.png"
+  },
+  {
+    "revision": "e8ce5dc84baec886a95c1001d43c73d4",
+    "url": "/Clock-Suite/static/media/ClockPurpleTranslucentBackground.e8ce5dc8.png"
   },
   {
     "revision": "1e2302acae619d74eea9d08194bf7d90",
