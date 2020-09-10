@@ -81,6 +81,9 @@ const Home = () => {
         <h3 className="text-align-center">
             —Can be digital or analog.
         </h3>
+        <h3 className="text-align-center">
+            —Clock can float on top or go behind other windows.
+        </h3>
         <video controls poster={AnalogClockImage}>
             <source src={ClockShowHideSeconds} type="video/mp4"/>
             Your browser does not support the video tag.
@@ -242,6 +245,9 @@ const Home = () => {
             <source src={UseTimerVideo} type="video/mp4"/>
             Your browser does not support the video tag.
         </video>
+        <h3 className="text-align-center">
+            -Timers can float on top or go behind other windows.
+        </h3>
         <h1 className="text-align-center">
             Alerts and Songs
         </h1>
