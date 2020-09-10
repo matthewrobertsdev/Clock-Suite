@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/Clock-Suite/static/css/main.629cd0db.chunk.css",
-    "main.js": "/Clock-Suite/static/js/main.5faa8ed2.chunk.js",
-    "main.js.map": "/Clock-Suite/static/js/main.5faa8ed2.chunk.js.map",
+    "main.js": "/Clock-Suite/static/js/main.2f18bcfc.chunk.js",
+    "main.js.map": "/Clock-Suite/static/js/main.2f18bcfc.chunk.js.map",
     "runtime-main.js": "/Clock-Suite/static/js/runtime-main.bef84d6a.js",
     "runtime-main.js.map": "/Clock-Suite/static/js/runtime-main.bef84d6a.js.map",
     "static/css/2.1c164e0d.chunk.css": "/Clock-Suite/static/css/2.1c164e0d.chunk.css",
     "static/js/2.4a81328c.chunk.js": "/Clock-Suite/static/js/2.4a81328c.chunk.js",
     "static/js/2.4a81328c.chunk.js.map": "/Clock-Suite/static/js/2.4a81328c.chunk.js.map",
     "index.html": "/Clock-Suite/index.html",
-    "precache-manifest.ee77c00b74bde693470ba60b42e01422.js": "/Clock-Suite/precache-manifest.ee77c00b74bde693470ba60b42e01422.js",
+    "precache-manifest.232a02e6e632b564f0577d5d5efa855b.js": "/Clock-Suite/precache-manifest.232a02e6e632b564f0577d5d5efa855b.js",
     "service-worker.js": "/Clock-Suite/service-worker.js",
     "static/css/2.1c164e0d.chunk.css.map": "/Clock-Suite/static/css/2.1c164e0d.chunk.css.map",
     "static/css/main.629cd0db.chunk.css.map": "/Clock-Suite/static/css/main.629cd0db.chunk.css.map",
@@ -57,6 +57,6 @@
     "static/css/2.1c164e0d.chunk.css",
     "static/js/2.4a81328c.chunk.js",
     "static/css/main.629cd0db.chunk.css",
-    "static/js/main.5faa8ed2.chunk.js"
+    "static/js/main.2f18bcfc.chunk.js"
   ]
 }
