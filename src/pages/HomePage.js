@@ -33,6 +33,9 @@ import SystemDarkClockDarkImage from "../resources/DarkModeClockMedium/SystemDar
 import GrayClockDarkImage from "../resources/DarkModeClockMedium/GrayClockDark.png";
 import WhiteClockDarkImage from "../resources/DarkModeClockMedium/WhiteClockDark.png";
 
+import ClockPurpleTranslucentBackground from "../resources/ClockPurpleTranslucentBackground.png";
+import ClockPurpleGrayBackground from "../resources/ClockPurpleGrayBackground.png";
+
 import AlarmSetUpImage from "../resources/AlarmSetUp.png";
 import TimerSetUpImage from "../resources/TimerSetUp.png";
 
@@ -109,6 +112,16 @@ const Home = () => {
             —Works in system-wide dark mode and light mode.
             The app’s colors will automatically change when
             dark mode or light mode changes.
+        </h3>
+        <h3 className="text-align-center">
+            —Unified colors for the entire app with a single click.
+        </h3>
+        <h3 className="text-align-center">
+            —Color choice can be the background color or the foreground color.
+        </h3>
+        <h3 className="text-align-center">
+            —When the color choice is the foreground, background can be dark 
+            gray or transcluent.  This can be set in preferences.
         </h3>
         <h2 className="text-align-center">
             Light Mode
@@ -196,16 +209,19 @@ const Home = () => {
                 </div>
             </Carousel>
         </div>
-        <h3 className="text-align-center">
-            —Unified colors for the entire app with a single click.
-        </h3>
-        <h3 className="text-align-center">
-            —Color choice can be the background color or the foreground color.
-        </h3>
-        <h3 className="text-align-center">
-            —When the color choice is the foreground, background can be dark 
-            gray or transcluent.  This can be set in preferences.
-        </h3>
+        <h2 className="text-align-center">
+            Color as Foreground, with Gray or Translucent Background
+        </h2>
+        <div className="carousel">
+            <Carousel showArrows={true} className="carousel-style">
+                <div>
+                    <img src={ClockPurpleGrayBackground} alt="Clock Suite Purple Color as Foreground with Gray Background" />
+                </div>
+                <div>
+                    <img src={ClockPurpleTranslucentBackground} alt="Clock Suite Purple Color as Foreground with Translucent Background" />
+                </div>
+              </Carousel>
+        </div>
         {/* add pictures */}
         <h1 className="text-align-center">
             Alarms and Timers
