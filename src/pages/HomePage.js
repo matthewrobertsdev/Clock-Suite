@@ -284,6 +284,13 @@ const Home = () => {
             Your browser does not support the video tag.
         </video>
     </div>
+    <h1 className="text-align-center">
+      Miscellaneous
+    </h1>
+    <h3 className="text-align-center">
+      —Can use 24 hour mode or AM/PM mode for throughout the app.  
+      You can choose this in the app’s preferences.
+    </h3>
         <br></br>
     </div>
     </main>);
