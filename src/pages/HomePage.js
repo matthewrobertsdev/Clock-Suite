@@ -1,6 +1,5 @@
 //Copyright  © 2020  Matt Roberts
 import React, { useEffect } from 'react';
-import { useSelector, useDispatch } from 'react-redux';
 
 import ClockShowHideSeconds from "../resources/ClockShowHideSeconds.mp4";
 import AnalogClockImage from "../resources/AnalogClock.png";
@@ -51,10 +50,10 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
 
 const Home = () => {
-    const dispatch=useDispatch()
-    useEffect(()=>{dispatch({type: 'CHANGE_COLOR'});document.title = "Clock Suite"})
-    const colorClass = useSelector(state => state.misc.colorClass)
-    return (<div><div className={'main-background main-' + colorClass}><div className="main-margin">
+    useEffect(()=>{document.title = "Clock Suite"})
+    return (<main>
+      <div className={'main-background main-blue'}>
+        <div className="main-margin">
         <br></br>
         <h1 className="text-align-center title">
             Clock Suite
@@ -73,7 +72,8 @@ const Home = () => {
             Clock
         </h1>
         <h3 className="text-align-center">
-            —Completely resizable, just by dragging its edges, anywhere from very small to full screen.
+            —Completely resizable, just by dragging its edges, anywhere 
+            from very small to full screen.
         </h3>
         <h3 className="text-align-center">
             —Can show or hide seconds.
@@ -124,7 +124,7 @@ const Home = () => {
         </h3>
         <h3 className="text-align-center">
             —When the color choice is the foreground, background can be dark 
-            gray or transcluent.  This can be set in preferences.
+            gray or translucent.  This can be set in preferences.
         </h3>
         <h2 className="text-align-center">
             Light Mode
@@ -286,6 +286,6 @@ const Home = () => {
     </div>
         <br></br>
     </div>
-    </div>);
+    </main>);
 }
 export default Home;
