@@ -60,8 +60,8 @@ const Home = () => {
         </h1>
         <img src={GreenClockImage} alt="Green Clock Suite"></img>
         <h2 className="text-align-center">
-            A Great Clock Suite for your Mac--Alarms, Timers, a Resizable
-            Clock, and a Dock Clock for your Mac's Dock.  All in
+            A great Clock Suite for your computer--Alarms, Timers, a Resizable
+            Clock, and a Dock Clock for your computer's dock.  All in
             brilliant color, that works in dark mode and light
             mode with many color choices that you'll desire.  Choose from
             songs you own or from built-in alerts for sounds when

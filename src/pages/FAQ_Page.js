@@ -12,10 +12,14 @@ const FAQ_Page = () => {
         Answer: You must open Clock Suite Preferences under the Clock Suite menu 
         and select "Translucent", under "Color For Foreground Background".  
         You also must have selected, under the Colors menu, "Color for Foreground"
-        to have the active window be transclucent.
+        to have the window that has focus be transclucent.  Only a window that has 
+        focus will be transclucent, so you must click a window to make it have focus
+        for it to be transclucent.  If it loses focus, it will no longer be 
+        transclucent. If you click on it again, it will become transclucent again.  
         To return to a dark gray background for when the chosen color is the 
-        foreground, go to Clock Suite Preferences under the Clock Suite menu 
-        and select "Dark Gray", under "Color For Foreground Background".
+        foreground and a window has focus, go to Clock Suite Preferences under 
+        the Clock Suite menu and select "Dark Gray", under "Color For Foreground 
+        Background".
       </h3>
       <h2 className="text-align-center">
         Question: How do I switch between AM/PM mode and using a 24 hour clock?
