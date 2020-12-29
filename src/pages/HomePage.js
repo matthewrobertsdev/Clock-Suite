@@ -1,37 +1,39 @@
 //Copyright  © 2020  Matt Roberts
-import React from 'react';
-import { useSelector } from 'react-redux';
+import React, { useEffect } from 'react';
 
-import ClockAnalogSecondsVideo from "../resources/ClockAnalogSeconds.mp4";
+import ClockShowHideSeconds from "../resources/ClockShowHideSeconds.mp4";
 import AnalogClockImage from "../resources/AnalogClock.png";
 import ClockShowHideDateVideo from "../resources/ClockShowHideDate.mp4";
 import ClockShowHideDateImage from "../resources/ClockShowHideDate.png";
 
-import CustomColorClockImage from "../resources/LightModeClockSmall/CustomColorClockLight.png";
-import RedClockImage from "../resources/LightModeClockSmall/RedClockLight.png";
-import OrangeClockImage from "../resources/LightModeClockSmall/OrangeClockLight.png";
-import YellowClockImage from "../resources/LightModeClockSmall/YellowClockLight.png";
-import GreenClockImage from "../resources/LightModeClockSmall/GreenClockLight.png";
-import BlueClockImage from "../resources/LightModeClockSmall/BlueClockLight.png";
-import PurpleClockImage from "../resources/LightModeClockSmall/PurpleClockLight.png";
-import PinkClockImage from "../resources/LightModeClockSmall/PinkClockLight.png";
-import BrownClockImage from "../resources/LightModeClockSmall/BrownClockLight.png";
-import GrayClockImage from "../resources/LightModeClockSmall/GrayClockLight.png";
-import WhiteClockImage from "../resources/LightModeClockSmall/WhiteClockLight.png";
+import CustomColorClockImage from "../resources/LightModeClockMedium/CustomColorClockLight.png";
+import RedClockImage from "../resources/LightModeClockMedium/RedClockLight.png";
+import OrangeClockImage from "../resources/LightModeClockMedium/OrangeClockLight.png";
+import YellowClockImage from "../resources/LightModeClockMedium/YellowClockLight.png";
+import GreenClockImage from "../resources/LightModeClockMedium/GreenClockLight.png";
+import BlueClockImage from "../resources/LightModeClockMedium/BlueClockLight.png";
+import PurpleClockImage from "../resources/LightModeClockMedium/PurpleClockLight.png";
+import PinkClockImage from "../resources/LightModeClockMedium/PinkClockLight.png";
+import BrownClockImage from "../resources/LightModeClockMedium/BrownClockLight.png";
+import GrayClockImage from "../resources/LightModeClockMedium/GrayClockLight.png";
+import WhiteClockImage from "../resources/LightModeClockMedium/WhiteClockLight.png";
 
-import CustomColorClockDarkImage from "../resources/DarkModeClockSmall/CustomColorClockDark.png";
-import RedClockDarkImage from "../resources/DarkModeClockSmall/RedClockDark.png";
-import OrangeClockDarkImage from "../resources/DarkModeClockSmall/OrangeClockDark.png";
-import YellowClockDarkImage from "../resources/DarkModeClockSmall/YellowClockDark.png";
-import GreenClockDarkImage from "../resources/DarkModeClockSmall/GreenClockDark.png";
-import BlueClockDarkImage from "../resources/DarkModeClockSmall/BlueClockDark.png";
-import PurpleClockDarkImage from "../resources/DarkModeClockSmall/PurpleClockDark.png";
-import PinkClockDarkImage from "../resources/DarkModeClockSmall/PinkClockDark.png";
-import BrownClockDarkImage from "../resources/DarkModeClockSmall/BrownClockDark.png";
-import BlackClockDarkImage from "../resources/DarkModeClockSmall/BlackClockDark.png";
-import SystemDarkClockDarkImage from "../resources/DarkModeClockSmall/SystemDarkClockDark.png";
-import GrayClockDarkImage from "../resources/DarkModeClockSmall/GrayClockDark.png";
-import WhiteClockDarkImage from "../resources/DarkModeClockSmall/WhiteClockDark.png";
+import CustomColorClockDarkImage from "../resources/DarkModeClockMedium/CustomColorClockDark.png";
+import RedClockDarkImage from "../resources/DarkModeClockMedium/RedClockDark.png";
+import OrangeClockDarkImage from "../resources/DarkModeClockMedium/OrangeClockDark.png";
+import YellowClockDarkImage from "../resources/DarkModeClockMedium/YellowClockDark.png";
+import GreenClockDarkImage from "../resources/DarkModeClockMedium/GreenClockDark.png";
+import BlueClockDarkImage from "../resources/DarkModeClockMedium/BlueClockDark.png";
+import PurpleClockDarkImage from "../resources/DarkModeClockMedium/PurpleClockDark.png";
+import PinkClockDarkImage from "../resources/DarkModeClockMedium/PinkClockDark.png";
+import BrownClockDarkImage from "../resources/DarkModeClockMedium/BrownClockDark.png";
+import BlackClockDarkImage from "../resources/DarkModeClockMedium/BlackClockDark.png";
+import SystemDarkClockDarkImage from "../resources/DarkModeClockMedium/SystemDarkClockDark.png";
+import GrayClockDarkImage from "../resources/DarkModeClockMedium/GrayClockDark.png";
+import WhiteClockDarkImage from "../resources/DarkModeClockMedium/WhiteClockDark.png";
+
+import ClockPurpleTranslucentBackground from "../resources/ClockPurpleTranslucentBackground.png";
+import ClockPurpleGrayBackground from "../resources/ClockPurpleGrayBackground.png";
 
 import AlarmSetUpImage from "../resources/AlarmSetUp.png";
 import TimerSetUpImage from "../resources/TimerSetUp.png";
@@ -48,16 +50,18 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
 
 const Home = () => {
-    const colorClass = useSelector(state => state.misc.colorClass)
-    return (<div><div className={'main-background main-' + colorClass}><div className="main-margin">
+    useEffect(()=>{document.title = "Clock Suite"})
+    return (<main>
+      <div className={'main-background main-blue'}>
+        <div className="main-margin">
         <br></br>
         <h1 className="text-align-center title">
             Clock Suite
         </h1>
         <img src={GreenClockImage} alt="Green Clock Suite"></img>
         <h2 className="text-align-center">
-            A Great Clock Suite for your Mac--Alarms, Timers, a Resizable
-            Clock, and a Dock Clock for your Mac's Dock.  All in
+            A great Clock Suite for your computer--Alarms, Timers, a Resizable
+            Clock, and a Dock Clock for your computer's dock.  All in
             brilliant color, that works in dark mode and light
             mode with many color choices that you'll desire.  Choose from
             songs you own or from built-in alerts for sounds when
@@ -68,7 +72,8 @@ const Home = () => {
             Clock
         </h1>
         <h3 className="text-align-center">
-            —Completely resizable, just by dragging its edges, anywhere from very small to full screen.
+            —Completely resizable, just by dragging its edges, anywhere 
+            from very small to full screen.
         </h3>
         <h3 className="text-align-center">
             —Can show or hide seconds.
@@ -76,8 +81,11 @@ const Home = () => {
         <h3 className="text-align-center">
             —Can be digital or analog.
         </h3>
+        <h3 className="text-align-center">
+            —Clock can float on top or go behind other windows.
+        </h3>
         <video controls poster={AnalogClockImage}>
-            <source src={ClockAnalogSecondsVideo} type="video/mp4"/>
+            <source src={ClockShowHideSeconds} type="video/mp4"/>
             Your browser does not support the video tag.
         </video>
         <br></br>
@@ -98,14 +106,25 @@ const Home = () => {
         </h1>
         <h3 className="text-align-center">
             —Comes with 12 built-in colors and a choice to
-            choose a custom color.  Colors are a system dark or light color,
+            choose a custom color, all available with dark and light mode versions.  
+            Colors are a system dark or light color,
             black, gray, white, red, orange, yellow, green,
-            blue, purple, brown, or a custom color.
+            blue, purple, pink, brown, or a custom color.
         </h3>
         <h3 className="text-align-center">
             —Works in system-wide dark mode and light mode.
             The app’s colors will automatically change when
             dark mode or light mode changes.
+        </h3>
+        <h3 className="text-align-center">
+            —Unified colors for the entire app with a single click.
+        </h3>
+        <h3 className="text-align-center">
+            —Color choice can be the background color or the foreground color.
+        </h3>
+        <h3 className="text-align-center">
+            —When the color choice is the foreground, background can be dark 
+            gray or translucent.  This can be set in preferences.
         </h3>
         <h2 className="text-align-center">
             Light Mode
@@ -193,12 +212,20 @@ const Home = () => {
                 </div>
             </Carousel>
         </div>
-        <h3 className="text-align-center">
-            —Unified colors for the entire app with a single click.
-        </h3>
-        <h3 className="text-align-center">
-            —Color choice can be the background color or the foreground color.
-        </h3>
+        <h2 className="text-align-center">
+            Color as Foreground, with Gray or Translucent Background
+        </h2>
+        <div className="carousel">
+            <Carousel showArrows={true} className="carousel-style">
+                <div>
+                    <img src={ClockPurpleGrayBackground} alt="Clock Suite Purple Color as Foreground with Gray Background" />
+                </div>
+                <div>
+                    <img src={ClockPurpleTranslucentBackground} alt="Clock Suite Purple Color as Foreground with Translucent Background" />
+                </div>
+              </Carousel>
+        </div>
+        {/* add pictures */}
         <h1 className="text-align-center">
             Alarms and Timers
         </h1>
@@ -218,6 +245,9 @@ const Home = () => {
             <source src={UseTimerVideo} type="video/mp4"/>
             Your browser does not support the video tag.
         </video>
+        <h3 className="text-align-center">
+            -Timers can float on top or go behind other windows.
+        </h3>
         <h1 className="text-align-center">
             Alerts and Songs
         </h1>
@@ -254,8 +284,15 @@ const Home = () => {
             Your browser does not support the video tag.
         </video>
     </div>
+    <h1 className="text-align-center">
+      Miscellaneous
+    </h1>
+    <h3 className="text-align-center">
+      —Can use 24 hour mode or AM/PM mode for throughout the app.  
+      You can choose this in the app’s preferences.
+    </h3>
         <br></br>
     </div>
-    </div>);
+    </main>);
 }
 export default Home;
