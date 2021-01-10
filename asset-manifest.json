@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/Clock-Suite/static/css/main.629cd0db.chunk.css",
-    "main.js": "/Clock-Suite/static/js/main.b6d32244.chunk.js",
-    "main.js.map": "/Clock-Suite/static/js/main.b6d32244.chunk.js.map",
+    "main.css": "/Clock-Suite/static/css/main.43e6dc8c.chunk.css",
+    "main.js": "/Clock-Suite/static/js/main.295d25a4.chunk.js",
+    "main.js.map": "/Clock-Suite/static/js/main.295d25a4.chunk.js.map",
     "runtime-main.js": "/Clock-Suite/static/js/runtime-main.bef84d6a.js",
     "runtime-main.js.map": "/Clock-Suite/static/js/runtime-main.bef84d6a.js.map",
     "static/css/2.1c164e0d.chunk.css": "/Clock-Suite/static/css/2.1c164e0d.chunk.css",
-    "static/js/2.25d26b86.chunk.js": "/Clock-Suite/static/js/2.25d26b86.chunk.js",
-    "static/js/2.25d26b86.chunk.js.map": "/Clock-Suite/static/js/2.25d26b86.chunk.js.map",
+    "static/js/2.0ee25338.chunk.js": "/Clock-Suite/static/js/2.0ee25338.chunk.js",
+    "static/js/2.0ee25338.chunk.js.map": "/Clock-Suite/static/js/2.0ee25338.chunk.js.map",
     "index.html": "/Clock-Suite/index.html",
-    "precache-manifest.86651567dc3026e47008de4d0c86056a.js": "/Clock-Suite/precache-manifest.86651567dc3026e47008de4d0c86056a.js",
+    "precache-manifest.18f74f14bee41cb55ca531e8b746f82c.js": "/Clock-Suite/precache-manifest.18f74f14bee41cb55ca531e8b746f82c.js",
     "service-worker.js": "/Clock-Suite/service-worker.js",
     "static/css/2.1c164e0d.chunk.css.map": "/Clock-Suite/static/css/2.1c164e0d.chunk.css.map",
-    "static/css/main.629cd0db.chunk.css.map": "/Clock-Suite/static/css/main.629cd0db.chunk.css.map",
-    "static/js/2.25d26b86.chunk.js.LICENSE": "/Clock-Suite/static/js/2.25d26b86.chunk.js.LICENSE",
+    "static/css/main.43e6dc8c.chunk.css.map": "/Clock-Suite/static/css/main.43e6dc8c.chunk.css.map",
+    "static/js/2.0ee25338.chunk.js.LICENSE": "/Clock-Suite/static/js/2.0ee25338.chunk.js.LICENSE",
     "static/media/AlarmSetUp.png": "/Clock-Suite/static/media/AlarmSetUp.82f56c29.png",
     "static/media/AnalogClock.png": "/Clock-Suite/static/media/AnalogClock.6ddff353.png",
     "static/media/BlackClockDark.png": "/Clock-Suite/static/media/BlackClockDark.cbd5634c.png",
@@ -55,8 +55,8 @@
   "entrypoints": [
     "static/js/runtime-main.bef84d6a.js",
     "static/css/2.1c164e0d.chunk.css",
-    "static/js/2.25d26b86.chunk.js",
-    "static/css/main.629cd0db.chunk.css",
-    "static/js/main.b6d32244.chunk.js"
+    "static/js/2.0ee25338.chunk.js",
+    "static/css/main.43e6dc8c.chunk.css",
+    "static/js/main.295d25a4.chunk.js"
   ]
 }
