@@ -8,9 +8,7 @@ const PrivacyPolicyPage = () => {
                 Privacy Policy
                 </h1>
             <h2 className='main-text'>
-                I, Matt Roberts, collect log data as allowed by the users of Clock Suite 
-                and provided by Apple.  I do not collect any data on my own 
-                from the use of Clock Suite by its users.
+                Clock Suite collects no data from its users, and doesn't connect to the internet.
             </h2>
             <br></br><br></br><br></br>
             </main>);

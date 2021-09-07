@@ -4,7 +4,7 @@ const Footer = () => {
     return (<div>
     <br></br><br></br>
     <div className="text-align-center copyright">
-        Copyright  © 2020  Matt Roberts
+        Copyright  © 2020-2021  Matt Roberts
     </div>
     <br></br><br></br>
     </div>);

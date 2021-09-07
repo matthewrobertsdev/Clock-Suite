@@ -1,6 +1,8 @@
 //Copyright  © 2020  Matt Roberts
 import React, { useEffect } from 'react';
 
+import DownloadOnMacAppStore from '../resources/DownloadOnMacAppStore.png'
+
 import ClockShowHideSeconds from "../resources/ClockShowHideSeconds.mp4";
 import AnalogClockImage from "../resources/AnalogClock.png";
 import ClockShowHideDateVideo from "../resources/ClockShowHideDate.mp4";
@@ -59,6 +61,11 @@ const Home = () => {
             Clock Suite
         </h1>
         <img src={GreenClockImage} alt="Green Clock Suite"></img>
+        <br/>
+        <a href='https://apps.apple.com/app/apple-store/id1531519063?pt=122105291&ct=clocksuite&mt=8'>
+          <img src={DownloadOnMacAppStore} alt={'Download on Mac App Store'} 
+          className='app-store-badge'/>
+        </a>
         <h2 className="text-align-center">
             A great Clock Suite for your computer--Alarms, Timers, a Resizable
             Clock, and a Dock Clock for your computer's dock.  All in
