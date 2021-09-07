@@ -8,7 +8,7 @@ const PrivacyPolicyPage = () => {
                 Privacy Policy
                 </h1>
             <h2 className='main-text'>
-                Clock Suite collects no data from its users, and doesn't connect to the internet.
+                Clock Suite does not collect data from its users, and doesn't connect to the internet.
             </h2>
             <br></br><br></br><br></br>
             </main>);
